@@ -1,9 +1,9 @@
 from typing import Optional
-from fastapi_users import exceptions, schemas, models
 from fastapi import Depends, Request
 from fastapi_users import BaseUserManager, IntegerIDMixin
 
-from .database import User, get_user_db
+from database import User
+from .utils import get_user_db
 
 SECRET = "SECRET"
 
