@@ -2,7 +2,7 @@ from fastapi_users.authentication import CookieTransport, AuthenticationBackend
 from fastapi_users.authentication import JWTStrategy
 from .manager import get_user_manager
 from fastapi_users import FastAPIUsers
-from .models import User
+from models import User
 
 cookie_transport = CookieTransport(cookie_name="hotel", cookie_max_age=3600)
 
